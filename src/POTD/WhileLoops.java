@@ -7,5 +7,10 @@ public class WhileLoops {
             System.out.println(++x);
         }
 
+        x = 0;
+        do {
+            System.out.println(++x);
+        } while (x < 5);
+
     }
 }
