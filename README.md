@@ -17,8 +17,8 @@ git push
 
 ## Viewing my work history
 
-See any file being written step by step on Git History, e.g.:
-https://githistory.xyz/Zimraan595/Computer-Science-G12-Java/blob/master/src/POTD/WhileLoops.java
+To export the work, go to the file and, in the link, replace `github.com` with `githistory.xyz`
+The link is only required one time and will automatically update as you edit
 
 To view another file, swap the path after `/blob/master/`.
 
