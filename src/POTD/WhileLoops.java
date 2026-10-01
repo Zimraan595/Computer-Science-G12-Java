@@ -12,5 +12,9 @@ public class WhileLoops {
             System.out.println(++x);
         } while (x < 5);
 
+        for (int i=1; i <= 5; i++){
+            System.out.println(i);
+        }
+
     }
 }
