@@ -7,14 +7,14 @@ public class WhileLoops {
             System.out.println(++x);
         }
 
-        System.out.println("------------------------------------------------");
+        System.out.println("-----------------------Separate Loop Used-------------------------");
 
         x = 0;
         do {
             System.out.println(++x);
         } while (x < 5);
 
-        System.out.println("------------------------------------------------");
+        System.out.println("-----------------------Separate Loop Used-------------------------");
 
         for (int i=1; i <= 5; i++){
             System.out.println(i);
