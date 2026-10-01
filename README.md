@@ -1,6 +1,26 @@
 # Grade 12 Computer Science - Java Assignments
 
-Welcome to my repository for **Grade 12 Computer Science (ICS4U)**. This repository serves as a centralized, organized space for me to track, manage, and showcase all of my Java programming assignments, exercises, and projects throughout the school year.
+## Autosave script
+
+Run this in IntelliJ's terminal (Alt+F12, PowerShell) when you start coding.
+It commits every minute if anything changed and pushes to GitHub every 5 minutes.
+
+```powershell
+$n = 0; while ($true) { if (git status --porcelain) { git add -A; git commit -q -m "autosave $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" }; $n++; if ($n % 5 -eq 0) { git pull --rebase --autostash -q; git push -q }; Start-Sleep -Seconds 60 }
+```
+
+**To stop:** click in the terminal and press `Ctrl+C`, then run:
+
+```powershell
+git push
+```
+
+## Viewing my work history
+
+See any file being written step by step on Git History, e.g.:
+https://githistory.xyz/Zimraan595/Computer-Science-G12-Java/blob/master/src/POTD/WhileLoops.java
+
+To view another file, swap the path after `/blob/master/`.
 
 ## 📂 Repository Structure
 
