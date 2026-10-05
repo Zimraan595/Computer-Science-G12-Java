@@ -9,7 +9,7 @@ public class CountedLoop {
     }
 
     private static void Problem2() {
-        for (int i = 0; i <= 100; i += 2) {
+        for (int i = 1; i <= 99; i += 2) {
             System.out.println(i);
         }
     }
