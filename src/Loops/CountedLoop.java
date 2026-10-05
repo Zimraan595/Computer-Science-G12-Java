@@ -4,7 +4,7 @@ public class CountedLoop {
     public static void main() {
 //        Problem1();
         Problem2();
-        
+
 
     }
 
