@@ -6,7 +6,8 @@ public class CountedLoop {
 //        Problem2();
 //        Prooblem3();
 //        Problem4();
-        
+        for (int i = ) {
+        }
 
     }
 
