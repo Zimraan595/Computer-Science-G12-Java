@@ -1,9 +1,10 @@
 import java.util.Scanner;
 
 public class IntroWhileLoopExercises {
-    static void main() {
-        Scanner input = new Scanner(System.in);
 
+    public Scanner input = new Scanner(System.in);
+
+    static void main() {
         System.out.println("Sample Run");
         int num = 1;
 
