@@ -5,6 +5,12 @@ public class IntroWhileLoopExercises {
     static Scanner input = new Scanner(System.in);
 
     static void main() {
+//        Problem1();
+        System.out.println("Sample Run");
+        
+    }
+
+    private static void Problem1() {
         System.out.println("Sample Run");
         int num = 1;
 
