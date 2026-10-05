@@ -5,10 +5,15 @@ public class IntroWhileLoopExercises {
     static Scanner input = new Scanner(System.in);
 
     static void main() {
-//        Problem1();
-//        Problem2();
-//        Problem3();
+        Problem1();
+        Problem2();
+        Problem3();
+        Problem4();
 
+        input.close();
+    }
+
+    private static void Problem4() {
         System.out.println("Sample Run");
         String userResponse = "";
         int totalMark = 0;
@@ -24,8 +29,6 @@ public class IntroWhileLoopExercises {
         }
 
         System.out.println("Total Average: " + (totalMark/numOfMarks));
-
-        input.close();
     }
 
     private static void Problem3() {
