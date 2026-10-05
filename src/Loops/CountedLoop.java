@@ -6,7 +6,9 @@ public class CountedLoop {
 //        Problem2();
 //        Prooblem3();
 //        Problem4();
-        for (int i = ) {
+        System.out.println("Num\t");
+        for (int i = 2; i <= 20; i++) {
+            System.out.println();
         }
 
     }
