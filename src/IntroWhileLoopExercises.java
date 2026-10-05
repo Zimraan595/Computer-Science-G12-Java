@@ -10,6 +10,11 @@ public class IntroWhileLoopExercises {
         while (num != 0) {
             num = input.nextInt();
             input.nextLine();
+            if (num % 2 == 0) {
+                System.out.println("Even");
+            } else {
+                System.out.println("Odd");
+            }
         }
     }
 }
