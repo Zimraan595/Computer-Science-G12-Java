@@ -5,7 +5,8 @@ public class CountedLoop {
 //        Problem1();
 //        Problem2();
 
-        for (int i = ) {
+        for (int i = 100; i >= 0; i--) {
+            System.out.println(i);
         }
 
     }
