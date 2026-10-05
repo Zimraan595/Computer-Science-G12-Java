@@ -1,14 +1,20 @@
 package Loops;
+import java.util.Scanner;
 
 public class CountedLoop {
+
+    static Scanner input = new Scanner(System.in);
+
     public static void main() {
 //        Problem1();
 //        Problem2();
 //        Prooblem3();
 //        Problem4();
 //        Problem5();
+        System.out.print("Enter a number: ");
+        int number = input.nextInt();
+        input.nextLine();
         
-
     }
 
     private static void Problem5() {
