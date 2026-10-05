@@ -6,11 +6,15 @@ public class CountedLoop {
     static Scanner input = new Scanner(System.in);
 
     public static void main() {
-//        Problem1();
-//        Problem2();
-//        Prooblem3();
-//        Problem4();
-//        Problem5();
+        Problem1();
+        Problem2();
+        Prooblem3();
+        Problem4();
+        Problem5();
+        Problem6();
+    }
+
+    private static void Problem6() {
         System.out.print("Enter a number: ");
         int number = input.nextInt();
         input.nextLine();
