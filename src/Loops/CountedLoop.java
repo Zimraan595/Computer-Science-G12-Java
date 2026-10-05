@@ -4,11 +4,17 @@ public class CountedLoop {
     public static void main() {
 //        Problem1();
 //        Problem2();
+//        Prooblem3();
+        for (int i = 0; i >= -10; i--) {
+            System.out.println(i);
+        } 
 
+    }
+
+    private static void Prooblem3() {
         for (int i = 100; i >= 0; i--) {
             System.out.println(i);
         }
-
     }
 
     private static void Problem2() {
