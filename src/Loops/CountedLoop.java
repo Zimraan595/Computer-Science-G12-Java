@@ -5,10 +5,15 @@ public class CountedLoop {
 //        Problem1();
 //        Problem2();
 //        Prooblem3();
+//        Problem4();
+        
+
+    }
+
+    private static void Problem4() {
         for (int i = 0; i >= -10; i--) {
             System.out.println(i);
-        } 
-
+        }
     }
 
     private static void Prooblem3() {
