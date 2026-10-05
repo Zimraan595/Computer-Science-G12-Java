@@ -15,13 +15,13 @@ public class CountedLoop {
         int number = input.nextInt();
         input.nextLine();
         String exactDevisors = "";
-        for (int i = 0; i <= number; i++) {
+        for (int i = 1; i <= number; i++) {
             if (number % i == 0) {
                 exactDevisors += i + ", ";
             }
         }
-        exactDevisors[-2:]
-
+        exactDevisors = exactDevisors.substring(0, exactDevisors.length() - 2);
+        System.out.println("Exact Devisors: " + exactDevisors);
     }
 
     private static void Problem5() {
