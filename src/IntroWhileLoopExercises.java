@@ -6,13 +6,24 @@ public class IntroWhileLoopExercises {
 
     static void main() {
 //        Problem1();
+//        Problem2();
+        
+
+        input.close();
+    }
+
+    private static void Problem2() {
         System.out.println("Sample Run");
         int old_num = 0;
+        int new_num = 1;
 
-        System.out.print("Enter a number: ");
-        int new_num = input.nextInt();
-        input.nextLine();
-
+        while (new_num != 0) {
+            System.out.print("Enter a number: ");
+            new_num = input.nextInt();
+            input.nextLine();
+            old_num += new_num;
+            System.out.println("Total: " + old_num);
+        }
     }
 
     private static void Problem1() {
