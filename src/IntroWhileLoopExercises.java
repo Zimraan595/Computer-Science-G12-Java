@@ -8,8 +8,12 @@ public class IntroWhileLoopExercises {
 //        Problem1();
 //        Problem2();
         System.out.println("Sample Run");
-        int money = 0;
-        
+        int money = 100;
+
+        while (money > 0) {
+            System.out.println("Budget Remaining: $" + money);
+            System.out.print();
+        }
 
         input.close();
     }
