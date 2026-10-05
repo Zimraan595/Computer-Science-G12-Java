@@ -11,14 +11,19 @@ public class IntroWhileLoopExercises {
 
         System.out.println("Sample Run");
         String userResponse = "";
+        int totalMark = 0;
+        int numOfMarks = 0;
 
         while (!userResponse.equals("done")) {
-            System.out.println("Enter Mark:");
+            System.out.println("Enter Mark: ");
             userResponse = input.nextLine();
             if (!userResponse.equals("done")) {
-
+                totalMark += Integer.parseInt(userResponse);
+                numOfMarks++;
             }
         }
+
+        System.out.println("Total Average: " + (totalMark/numOfMarks));
 
         input.close();
     }
