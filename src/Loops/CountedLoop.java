@@ -3,11 +3,15 @@ package Loops;
 public class CountedLoop {
     public static void main() {
 //        Problem1();
+        Problem2();
+        
 
+    }
+
+    private static void Problem2() {
         for (int i = 0; i <= 100; i += 2) {
             System.out.println(i);
         }
-
     }
 
     private static void Problem1() {
