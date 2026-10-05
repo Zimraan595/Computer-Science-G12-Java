@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class IntroWhileLoopExercises {
 
-    public Scanner input = new Scanner(System.in);
+    static Scanner input = new Scanner(System.in);
 
     static void main() {
         System.out.println("Sample Run");
