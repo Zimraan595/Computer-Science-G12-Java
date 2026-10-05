@@ -14,7 +14,9 @@ public class CountedLoop {
         System.out.print("Enter a number: ");
         int number = input.nextInt();
         input.nextLine();
-        
+        Integer[] devisors = {
+                
+        }
     }
 
     private static void Problem5() {
