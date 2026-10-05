@@ -12,8 +12,12 @@ public class IntroWhileLoopExercises {
 
         while (money > 0) {
             System.out.println("Budget Remaining: $" + money);
-            System.out.print();
+            System.out.print("Cost of item: $");
+            money -= input.nextInt();
+            input.nextLine();
         }
+
+        System.out.print("Out of budget");
 
         input.close();
     }
