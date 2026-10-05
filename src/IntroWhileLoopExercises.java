@@ -7,6 +7,8 @@ public class IntroWhileLoopExercises {
     static void main() {
 //        Problem1();
         System.out.println("Sample Run");
+        int old_num = 0;
+
         System.out.print("Enter a number: ");
         int new_num = input.nextInt();
         input.nextLine();
