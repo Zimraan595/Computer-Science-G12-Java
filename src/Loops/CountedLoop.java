@@ -14,9 +14,14 @@ public class CountedLoop {
         System.out.print("Enter a number: ");
         int number = input.nextInt();
         input.nextLine();
-        Integer[] devisors = {
-                
+        String exactDevisors = "";
+        for (int i = 0; i <= number; i++) {
+            if (number % i == 0) {
+                exactDevisors += i + ", ";
+            }
         }
+        exactDevisors[-2:]
+
     }
 
     private static void Problem5() {
