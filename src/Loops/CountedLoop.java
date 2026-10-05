@@ -6,11 +6,16 @@ public class CountedLoop {
 //        Problem2();
 //        Prooblem3();
 //        Problem4();
-        System.out.println("Num\tSquare\tCube");
+//        Problem5();
+        
+
+    }
+
+    private static void Problem5() {
+        System.out.println("Num\t\tSquare\tCube");
         for (int i = 2; i <= 20; i++) {
             System.out.println(i + "\t\t" + i*i + "\t\t" + i*i*i);
         }
-
     }
 
     private static void Problem4() {
