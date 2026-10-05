@@ -10,7 +10,12 @@ public class IntroWhileLoopExercises {
 //        Problem3();
 
         System.out.println("Sample Run");
-        
+        String userResponse = "";
+
+        while (userResponse != "done") {
+            System.out.println("Enter Mark:");
+            
+        }
 
         input.close();
     }
