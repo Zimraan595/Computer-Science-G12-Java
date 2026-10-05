@@ -11,7 +11,4 @@ void main() {
         IO.println("i = " + i);
     }
 
-    for (int i; i <= 5; i++) {
-        System.out.println(i)
-    }
 }
