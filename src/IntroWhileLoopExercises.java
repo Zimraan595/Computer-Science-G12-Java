@@ -12,9 +12,12 @@ public class IntroWhileLoopExercises {
         System.out.println("Sample Run");
         String userResponse = "";
 
-        while (userResponse != "done") {
+        while (!userResponse.equals("done")) {
             System.out.println("Enter Mark:");
-            
+            userResponse = input.nextLine();
+            if (!userResponse.equals("done")) {
+
+            }
         }
 
         input.close();
