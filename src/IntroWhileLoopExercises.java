@@ -15,7 +15,7 @@ public class IntroWhileLoopExercises {
         int numOfMarks = 0;
 
         while (!userResponse.equals("done")) {
-            System.out.println("Enter Mark: ");
+            System.out.print("Enter Mark: ");
             userResponse = input.nextLine();
             if (!userResponse.equals("done")) {
                 totalMark += Integer.parseInt(userResponse);
