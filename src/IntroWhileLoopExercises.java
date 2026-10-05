@@ -7,6 +7,15 @@ public class IntroWhileLoopExercises {
     static void main() {
 //        Problem1();
 //        Problem2();
+//        Problem3();
+
+        System.out.println("Sample Run");
+        
+
+        input.close();
+    }
+
+    private static void Problem3() {
         System.out.println("Sample Run");
         int money = 100;
 
@@ -18,8 +27,6 @@ public class IntroWhileLoopExercises {
         }
 
         System.out.print("Out of budget");
-
-        input.close();
     }
 
     private static void Problem2() {
