@@ -26,7 +26,7 @@ public class LoopCounter {
                     System.out.println("Terminating your program");
                     break;
                 }
-
+                System.out.println("");
             }
         }
     }
