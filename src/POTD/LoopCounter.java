@@ -16,6 +16,10 @@ public class LoopCounter {
             userResponse = input.nextLine();
 
             if (userResponse.equals("exit")) {
+                if (totalCount == 0) {
+                    System.out.println("You did not input any valid numbers");
+                    break;
+                }
                 System.out.println("Average: " + (totalNum/totalCount));
                 break;
             }
@@ -37,8 +41,8 @@ public class LoopCounter {
                     System.out.println("Terminating your program");
                     break;
                 }
-                System.out.println();
             }
+            System.out.println();
         }
     }
 }
