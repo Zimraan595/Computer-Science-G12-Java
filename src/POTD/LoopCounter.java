@@ -12,10 +12,11 @@ public class LoopCounter {
         int totalNum = 0;
         int totalCount = 0;
         while (true) {
-            System.out.print("Enter a number from 1-20: ");
+            System.out.print("Enter a number from 1-20 (exit to leave): ");
             userResponse = input.nextLine();
 
             if (userResponse.equals("exit")) {
+                System.out.println("Average: " + (totalNum/totalCount));
                 break;
             }
 
