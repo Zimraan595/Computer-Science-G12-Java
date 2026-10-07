@@ -16,10 +16,12 @@ public class LoopCounter {
                 System.out.println("You have entered the a number that meets the requirements!");
                 break;
             } else {
+                System.out.println("Wrong number");
                 wrongCount++;
                 if (wrongCount == 3) {
-                    
+                    System.out.println("please stop being annoying!");
                 }
+
             }
         }
     }
