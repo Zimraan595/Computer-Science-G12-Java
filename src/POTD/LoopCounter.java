@@ -22,8 +22,9 @@ public class LoopCounter {
                     System.out.println("please stop being annoying!");
                 } else if (wrongCount == 5) {
                     System.out.println("I’m warning you! Please enter the right number!");
-                } else if (wrongCount == ) {
-                    
+                } else if (wrongCount >= 6) {
+                    System.out.println("Terminating your program");
+                    break;
                 }
 
             }
