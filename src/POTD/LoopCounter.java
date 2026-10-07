@@ -13,8 +13,13 @@ public class LoopCounter {
             num = input.nextInt();
 
             if (1 <= num && num <= 20) {
-                
+                System.out.println("You have entered the a number that meets the requirements!");
+                break;
+            } else {
+                wrongCount++;
             }
+
+            if wrongCount 
         }
     }
 }
