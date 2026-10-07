@@ -17,9 +17,10 @@ public class LoopCounter {
                 break;
             } else {
                 wrongCount++;
+                if (wrongCount == 3) {
+                    
+                }
             }
-
-            if wrongCount 
         }
     }
 }
