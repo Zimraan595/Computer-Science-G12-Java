@@ -20,6 +20,10 @@ public class LoopCounter {
                 wrongCount++;
                 if (wrongCount == 3) {
                     System.out.println("please stop being annoying!");
+                } else if (wrongCount == 5) {
+                    System.out.println("I’m warning you! Please enter the right number!");
+                } else if (wrongCount == ) {
+                    
                 }
 
             }
