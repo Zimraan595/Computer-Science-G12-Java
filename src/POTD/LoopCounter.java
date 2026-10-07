@@ -7,10 +7,14 @@ public class LoopCounter {
 
     public static void main(String[] args) {
         int num;
+        int wrongCount = 0;
         while (true) {
             System.out.print("Enter a number from 1-20: ");
             num = input.nextInt();
-            
+
+            if (1 <= num && num <= 20) {
+                
+            }
         }
     }
 }
