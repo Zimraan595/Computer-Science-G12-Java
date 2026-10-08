@@ -14,7 +14,7 @@ public class RockPaperScissorsLoops {
             System.out.println("(1) Rock, (2) Paper, (3) Scissors");
             user_choice = input.nextInt();
             computer_choice = rand.nextInt(3) + 1;
-            
+
 
         }
     }
