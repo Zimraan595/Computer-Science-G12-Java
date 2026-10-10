@@ -18,7 +18,7 @@ public class RockPaperScissorsLoops {
             
             if (result == 0) {
                 System.out.println("tie");
-            } else if (result) {
+            } else if (result == ) {
                 
             }
 
