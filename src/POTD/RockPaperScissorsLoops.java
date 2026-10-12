@@ -16,9 +16,14 @@ public class RockPaperScissorsLoops {
             computer_choice = rand.nextInt(3) + 1;
             
             if (computer_choice == user_choice) {
-                System.out.println("tie");
-            } else if () {
-                
+                System.out.println("Tie");
+            } else if ((user_choice == 1 && computer_choice == 3) ||
+                    (user_choice == 2 && computer_choice == 1) ||
+                    (user_choice == 3 && computer_choice == 2)) {
+                System.out.println("You Win!");
+            }
+            else {
+                System.out.println("You Loose!");
             }
 
 
