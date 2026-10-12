@@ -14,11 +14,10 @@ public class RockPaperScissorsLoops {
             System.out.println("(1) Rock, (2) Paper, (3) Scissors");
             user_choice = input.nextInt();
             computer_choice = rand.nextInt(3) + 1;
-            int result = computer_choice - user_choice; 
             
-            if (result == 0) {
+            if (computer_choice == user_choice) {
                 System.out.println("tie");
-            } else if (result == 34) {
+            } else if () {
                 
             }
 
