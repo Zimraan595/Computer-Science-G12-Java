@@ -22,6 +22,10 @@ public class TwoDArray {
             }
         }
 
+        System.out.print("\t");
+        for (int i = 1; i <= cols; i++) {
+            System.out.print(i + "\t");
+        }
         for (int row = 0; row < table.length; row++) {
             System.out.print(row + ":\t");
             for (int col = 0; col < table[row].length; col++) {
