@@ -16,5 +16,13 @@ public class TwoDArrayWarmup {
             }
             System.out.println();
         }
+
+        System.out.println("Jan\tFeb\tMarch");
+        for (int[] roe : rents) {
+            for (int rent : rentPerQuarter) {
+                System.out.print(rent + "\t");
+            }
+            System.out.println();
+        }
     }
 }
