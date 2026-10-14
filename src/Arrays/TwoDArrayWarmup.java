@@ -6,7 +6,10 @@ public class TwoDArrayWarmup {
                 {400, 550, 600},
                 {500, 525, 640},
                 {425, 475, 750},
-                {635, 490, }
+                {635, 490, 510}
         };
+
+        System.out.println("Jan\tFeb\tMarch");
+        
     }
 }
