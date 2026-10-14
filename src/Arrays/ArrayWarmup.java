@@ -11,7 +11,7 @@ public class ArrayWarmup {
         tempArray[4] = 89;
 
         for (int item: tempArray) {
-            
+            System.out.println(item);
         }
 
 
