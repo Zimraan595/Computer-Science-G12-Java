@@ -14,6 +14,7 @@ public class ArrayWarmup {
             System.out.println("Item " + itemIndex + ": " + tempArray[itemIndex]);
         }
 
+        
 
     }
 }
