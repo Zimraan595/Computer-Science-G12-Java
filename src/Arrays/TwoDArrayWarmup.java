@@ -1,4 +1,5 @@
 package Arrays;
+import java.util.ArrayList;
 
 public class TwoDArrayWarmup {
     public static void main(String[] args) {
@@ -8,6 +9,8 @@ public class TwoDArrayWarmup {
                 {425, 475, 750},
                 {635, 490, 510}
         };
+
+        ArrayList<ArrayList<Integer>> rentsList = new ArrayList<ArrayList<Integer>>
 
         System.out.println("Jan\tFeb\tMarch");
         for (int[] rentPerQuarter : rents) {
