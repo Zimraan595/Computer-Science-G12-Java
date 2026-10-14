@@ -10,8 +10,8 @@ public class ArrayWarmup {
         tempArray[3] = 76;
         tempArray[4] = 89;
 
-        for (int item: tempArray) {
-            System.out.println(item);
+        for (int itemIndex = 0; itemIndex < tempArray.length; itemIndex++) {
+            System.out.println("Item " + itemIndex + ": " + tempArray[itemIndex]);
         }
 
 
