@@ -10,7 +10,7 @@ public class TwoDArrayWarmup {
                 {635, 490, 510}
         };
 
-        ArrayList<ArrayList<Integer>> rentsList = new ArrayList<ArrayList<Integer>>
+        ArrayList<ArrayList<Integer>> rentsList = new ArrayList<>;
 
         System.out.println("Jan\tFeb\tMarch");
         for (int[] rentPerQuarter : rents) {
