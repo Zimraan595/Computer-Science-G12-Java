@@ -23,8 +23,9 @@ public class TwoDArray {
         }
 
         for (int row = 0; row < table.length; row++) {
+            System.out.print(row + ":\t");
             for (int col = 0; col < table[row].length; col++) {
-                System.out.print(row + ":\t" + table[row][col] + "\t");
+                System.out.print(table[row][col] + "\t");
             }
             System.out.println();
         }
