@@ -18,8 +18,18 @@ public class TwoDArray {
             System.out.println("Row " + row + ": ");
             for (int col = 0; col < table[row].length; col++) {
                 System.out.print("Column " + col + ": ");
+                table[row][col] = input.nextInt();
             }
         }
+
+        for (int row = 0; row < table.length; row++) {
+            for (int col = 0; col < table[row].length; col++) {
+                System.out.print(table[row][col]);
+            }
+            System.out.println();
+        }
+
+
 
     }
 }
