@@ -13,16 +13,18 @@ public class TwoDArray {
         input.nextLine();
 
         int[][] table = new int[rows][cols];
+        int sum = 0;
 
         for (int row = 0; row < table.length; row++) {
             System.out.println("Row " + row + ": ");
             for (int col = 0; col < table[row].length; col++) {
                 System.out.print("Column " + col + ": ");
                 table[row][col] = input.nextInt();
+                sum += table[row][col];
             }
         }
 
-        System.out.print("r/c\t");
+        System.out.print("\nTable:\nr|c\t");
         for (int i = 1; i <= cols; i++) {
             System.out.print(i + "\t");
         }
@@ -34,6 +36,8 @@ public class TwoDArray {
             }
             System.out.println();
         }
+        System.out.println();
+        System.out.println("Sum: " + sum);
 
 
 
