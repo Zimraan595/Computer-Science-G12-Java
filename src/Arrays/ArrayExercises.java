@@ -14,6 +14,7 @@ public class ArrayExercises {
         // 2b)
         boolean[] answers = new boolean[20];
         // 2c)
-        double[] avgSize = new double[20]
+        double[] avgSize = new double[11];
+        
     }
 }
