@@ -16,9 +16,9 @@ public class TwoDArray {
         int sum = 0;
 
         for (int row = 0; row < table.length; row++) {
-            System.out.println("Row " + row + ": ");
+            System.out.println("Row " + (row+1) + ": ");
             for (int col = 0; col < table[row].length; col++) {
-                System.out.print("Column " + col + ": ");
+                System.out.print("Column " + (col+1) + ": ");
                 table[row][col] = input.nextInt();
                 sum += table[row][col];
             }
