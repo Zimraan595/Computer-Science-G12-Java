@@ -13,6 +13,7 @@ public class ArrayExercises {
         int[] votes = new int[5];
         // 2b)
         boolean[] answers = new boolean[20];
-        
+        // 2c)
+        double[] avgSize = new double[20]
     }
 }
