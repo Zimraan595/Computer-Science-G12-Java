@@ -10,6 +10,9 @@ public class ArrayExercises {
         // e) 0 to 19 inclusive
 
         // 2a)
+        int[] votes = new int[5];
+        // 2b)
+        boolean[] answers = new boolean[20];
         
     }
 }
