@@ -47,8 +47,5 @@ public class TwoDArray {
         for (int i = 0; i < colsSum.length; i++) {
             System.out.println("Column " + (i+1) +" Sum: " + colsSum[i]);
         }
-
-
-
     }
 }
