@@ -22,7 +22,7 @@ public class TwoDArray {
             }
         }
 
-        System.out.print("Cols: \t");
+        System.out.print("r/c\t");
         for (int i = 1; i <= cols; i++) {
             System.out.print(i + "\t");
         }
