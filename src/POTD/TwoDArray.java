@@ -37,9 +37,10 @@ public class TwoDArray {
                 System.out.print(table[row][col] + "\t");
                 rowsSum[row] += table[row][col];
             }
+            System.out.println();
         }
         System.out.println("Sum: " + sum);
-        for (int i = 0; i <= rowsSum.length; i++) {
+        for (int i = 0; i < rowsSum.length; i++) {
             System.out.println("Row " + (i+1) +" Sum: " + rowsSum[i]);
         }
 
