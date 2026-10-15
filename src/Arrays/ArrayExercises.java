@@ -7,6 +7,9 @@ public class ArrayExercises {
         // b) 0
         // c) int
         // d) 19
-        // e) 
+        // e) 0 to 19 inclusive
+
+        // 2a)
+        
     }
 }
