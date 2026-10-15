@@ -29,19 +29,19 @@ public class TwoDArray {
             System.out.print(i + "\t");
         }
         System.out.println();
-        int rowSum = 0;
+        int[] rowsSum = new int[rows];
         int colSum = 0;
         for (int row = 0; row < table.length; row++) {
-            rowSum = 0;
             System.out.print(row + ":\t");
             for (int col = 0; col < table[row].length; col++) {
                 System.out.print(table[row][col] + "\t");
-                rowSum += table[row][col];
+                rowsSum[row] += table[row][col];
             }
-            System.out.println(" = " + rowSum);
         }
-        System.out.println();
         System.out.println("Sum: " + sum);
+        for (int i = 0; i <= rowsSum.length; i++) {
+            System.out.println("Row " + (i+1) +" Sum: " + rowsSum[i]);
+        }
 
 
 
