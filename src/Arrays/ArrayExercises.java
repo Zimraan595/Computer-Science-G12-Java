@@ -16,12 +16,13 @@ public class ArrayExercises {
         // 2c)
         double[] avgSize = new double[11];
 
-        // a) What is the value of mass[2]?
-        // b) What is the value of mass[5]?
-        // c) What are the possible values of the indices of the array?
-        // d) What is the identifier of the element whose value is 6.9?
-        // e) Of what type are the elements?
-        // f) What is the value of mass.length?
-
+        // 3)
+        double[] mass = {1, 4, 6.9, 9, 10.8, 12, 14, 16};
+        // a) What is the value of mass[2]? 6.9
+        // b) What is the value of mass[5]? 12
+        // c) What are the possible values of the indices of the array? 0-7
+        // d) What is the identifier of the element whose value is 6.9? 2
+        // e) Of what type are the elements? double
+        // f) What is the value of mass.length? 8
     }
 }
