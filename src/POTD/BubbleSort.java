@@ -33,7 +33,7 @@ public class BubbleSort {
         long end = System.nanoTime();
         long elapsed = end - start;
         System.out.println(Arrays.toString(numbers));
-        System.out.println("Completed in " + (elapsed/(double)(1000000000)) + "s");
+        System.out.println("Completed in " + (elapsed/1000000000.0) + "s");
     }
 
     public static int sort(int[] array) {
