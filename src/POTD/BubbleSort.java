@@ -21,6 +21,7 @@ public class BubbleSort {
             swaped = 0;
             for (int i = 1; i < numbers.length-swaped; i++) {
                 int temp;
+                System.out.println(i);
                 n = i + swaped;
                 int p = n - 1;
                 if (numbers[p] > numbers[n]) {
@@ -28,7 +29,6 @@ public class BubbleSort {
                     numbers[p] = numbers[n];
                     numbers[n] = temp;
                     swaped = p;
-                    break;
                 }
 
             }
