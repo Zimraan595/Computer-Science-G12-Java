@@ -21,8 +21,8 @@ public class BubbleSort {
             swaped = 0;
             for (int i = 1; i < numbers.length-swaped; i++) {
                 int temp;
-                System.out.println(i);
                 n = i + swaped;
+                System.out.println(i + " " + n);
                 int p = n - 1;
                 if (numbers[p] > numbers[n]) {
                     temp = numbers[p];
