@@ -12,5 +12,26 @@ public class BubbleSort {
             numbers[i] = rand.nextInt(98) + 1;
         }
         System.out.println(Arrays.toString(numbers));
+
+        boolean swaped = true;
+
+        while (swaped) {
+            swaped = false;
+            for (int i = 1; i < numbers.length; i++) {
+                int temp;
+                int p = i - 1;
+                if (numbers[p] > numbers[i]) {
+                    temp = numbers[p];
+                    numbers[p] = numbers[i];
+                    numbers[i] = temp;
+                    swaped = true;
+                }
+
+            }
+        }
+    }
+
+    public static int sort(int[] array) {
+        return 5;
     }
 }
