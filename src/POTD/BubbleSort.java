@@ -10,6 +10,6 @@ public class BubbleSort {
         for (int i = 0; i < 100; i++) {
             numbers[i] = rand.nextInt(98) + 1;
         }
-        System.out.println(numbers);
+        System.out.println(numbers.toString());
     }
 }
