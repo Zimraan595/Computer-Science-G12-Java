@@ -8,15 +8,14 @@ public class BubbleSort {
 
         Random rand = new Random();
 
-        long start = System.nanoTime();
         int[] numbers = new int[100];
         for (int i = 0; i < 100; i++) {
             numbers[i] = rand.nextInt(98) + 1;
         }
         System.out.println(Arrays.toString(numbers));
 
+        long start = System.nanoTime();
         boolean swaped = true;
-
         while (swaped) {
             swaped = false;
             for (int i = 1; i < numbers.length; i++) {
@@ -31,7 +30,10 @@ public class BubbleSort {
 
             }
         }
+        long end = System.nanoTime();
+        long elapsed = end - start;
         System.out.println(Arrays.toString(numbers));
+        System.out.println("Completed in " + (elapsed/1000000000) + "s");
     }
 
     public static int sort(int[] array) {
