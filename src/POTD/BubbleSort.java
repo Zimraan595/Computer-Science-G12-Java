@@ -28,6 +28,7 @@ public class BubbleSort {
                     numbers[p] = numbers[n];
                     numbers[n] = temp;
                     swaped = p;
+                    break;
                 }
 
             }
