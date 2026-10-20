@@ -1,4 +1,5 @@
 package POTD;
+import java.util.Arrays;
 import java.util.Random;
 
 public class BubbleSort {
@@ -10,6 +11,6 @@ public class BubbleSort {
         for (int i = 0; i < 100; i++) {
             numbers[i] = rand.nextInt(98) + 1;
         }
-        System.out.println(numbers.toString());
+        System.out.println(Arrays.toString(numbers));
     }
 }
