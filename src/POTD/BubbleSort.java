@@ -1,4 +1,5 @@
 package POTD;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -29,6 +30,7 @@ public class BubbleSort {
 
             }
         }
+        System.out.println(Arrays.toString(numbers));
     }
 
     public static int sort(int[] array) {
