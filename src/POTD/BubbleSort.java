@@ -17,9 +17,13 @@ public class BubbleSort {
 
         BubbleSort2(numbers.clone());
         BubbleSort(numbers.clone());
+
+        BubbleSort(numbers.clone());
+        BubbleSort2(numbers.clone());
     }
 
     private static void BubbleSort(int[] numbers) {
+        System.out.println("\nBubble Sort Slow");
         int swaped = 1;
         int num_len = numbers.length;
         long start = System.nanoTime();
@@ -43,6 +47,7 @@ public class BubbleSort {
         System.out.println("Completed in " + (elapsed/1000000.0) + "ms");
     }
     private static void BubbleSort2(int[] numbers) {
+        System.out.println("\nBubble Sort Fast");
         int num_len = numbers.length;
         int lower_bound = 0;
         int upper_bound = num_len;
