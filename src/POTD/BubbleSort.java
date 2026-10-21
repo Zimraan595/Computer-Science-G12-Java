@@ -20,6 +20,7 @@ public class BubbleSort {
         int num_len = numbers.length;
         while (swaped >= 0) {
             int static_swaped = swaped;
+            System.out.println("Iter");
             for (int i = 1; i < num_len-static_swaped; i++) {
                 int temp;
                 n = i + static_swaped;
