@@ -14,13 +14,13 @@ public class BubbleSort {
             numbers[i] = rand.nextInt(98) + 1;
         }
         System.out.println(Arrays.toString(numbers));
-        input.nextLine();
 
         long start = System.nanoTime();
         int swaped = 0;
         int n;
         int num_len = numbers.length;
         while (swaped >= 0) {
+            input.nextLine();
             int static_swaped = swaped;
             System.out.println("Iter" + static_swaped + " | " + swaped);
             for (int i = 1; i < num_len-static_swaped; i++) {
