@@ -25,6 +25,7 @@ public class BubbleSort {
                 n = i + static_swaped;
                 System.out.println(i + " " + n);
                 int p = n - 1;
+                System.out.println(numbers[p] + ">" + numbers[n] + ": " + (numbers[p] > numbers[n]));
                 if (numbers[p] > numbers[n]) {
                     temp = numbers[p];
                     numbers[p] = numbers[n];
