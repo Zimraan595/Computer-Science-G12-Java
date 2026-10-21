@@ -31,6 +31,15 @@ public class BubbleSort {
                 }
             }
             num_len = swaped;
+            for (int i = num_len-1; i > 0; i--) {
+                int temp;
+                int p = i - 1;
+                if (numbers[p] > numbers[i]) {
+                    temp = numbers[p];
+                    numbers[p] = numbers[i];
+                    numbers[i] = temp;
+                }
+            }
         }
         long end = System.nanoTime();
         long elapsed = end - start;
