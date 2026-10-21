@@ -15,7 +15,8 @@ public class ExceptionHandling {
             num1int = Integer.parseInt(num1);
             num2int = Integer.parseInt(num2);
             value = num1int/num2int;
-        } catch (NumberFormatException n) {
+            System.out.println("The result is: " + value);
+        } catch (NumberFormatException numberFormatException) {
             System.out.println("Error: Please enter valid whole numbers only.");
         } catch (ArithmeticException arithmeticException) {
             System.out.println("Error: Cannot divide by zero.");
