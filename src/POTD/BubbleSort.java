@@ -15,8 +15,8 @@ public class BubbleSort {
         }
         System.out.println(Arrays.toString(numbers));
 
-        BubbleSort(numbers.clone());
         BubbleSort2(numbers.clone());
+        BubbleSort(numbers.clone());
     }
 
     private static void BubbleSort(int[] numbers) {
@@ -35,6 +35,7 @@ public class BubbleSort {
                     swaped = i;
                 }
             }
+            num_len = swaped;
         }
         long end = System.nanoTime();
         long elapsed = end - start;
