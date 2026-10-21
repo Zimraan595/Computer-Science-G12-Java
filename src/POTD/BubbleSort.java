@@ -9,7 +9,7 @@ public class BubbleSort {
         Random rand = new Random();
 //        Scanner input = new Scanner(System.in);
 
-        int number_of_nums = 10000;
+        int number_of_nums = 30000;
         int[] numbers = new int[number_of_nums];
         for (int i = 0; i < number_of_nums; i++) {
             numbers[i] = rand.nextInt() + 1;
