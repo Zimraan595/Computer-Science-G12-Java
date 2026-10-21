@@ -7,11 +7,12 @@ public class BubbleSort {
     public static void main(String[] args) {
 
         Random rand = new Random();
-        Scanner input = new Scanner(System.in);
+//        Scanner input = new Scanner(System.in);
 
-        int[] numbers = new int[100];
-        for (int i = 0; i < 100; i++) {
-            numbers[i] = rand.nextInt(98) + 1;
+        int number_of_nums = 100000;
+        int[] numbers = new int[number_of_nums];
+        for (int i = 0; i < number_of_nums; i++) {
+            numbers[i] = rand.nextInt() + 1;
         }
         System.out.println(Arrays.toString(numbers));
 
