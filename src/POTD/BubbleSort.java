@@ -14,7 +14,7 @@ public class BubbleSort {
         for (int i = 0; i < number_of_nums; i++) {
             numbers[i] = rand.nextInt() + 1;
         }
-        System.out.println(Arrays.toString(numbers));
+//        System.out.println(Arrays.toString(numbers));
 
         BubbleSort2(numbers.clone());
         BubbleSort(numbers.clone());
@@ -44,7 +44,7 @@ public class BubbleSort {
         }
         long end = System.nanoTime();
         long elapsed = end - start;
-        System.out.println(Arrays.toString(numbers));
+//        System.out.println(Arrays.toString(numbers));
         System.out.println("Completed in " + (elapsed/1000000.0) + "ms");
     }
     private static void BubbleSort2(int[] numbers) {
@@ -84,7 +84,7 @@ public class BubbleSort {
         }
         long end = System.nanoTime();
         long elapsed = end - start;
-        System.out.println(Arrays.toString(numbers));
+//        System.out.println(Arrays.toString(numbers));
         System.out.println("Completed in " + (elapsed/1000000.0) + "ms");
     }
 }
