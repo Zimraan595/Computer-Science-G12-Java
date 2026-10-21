@@ -9,7 +9,7 @@ public class BubbleSort {
         Random rand = new Random();
 //        Scanner input = new Scanner(System.in);
 
-        int number_of_nums = 100000;
+        int number_of_nums = 1000;
         int[] numbers = new int[number_of_nums];
         for (int i = 0; i < number_of_nums; i++) {
             numbers[i] = rand.nextInt() + 1;
@@ -100,7 +100,7 @@ public class BubbleSort {
     }
 
     private static void ZimraanSort(int[] numbers) {
-        System.out.println("Zimraan Sort");
+        System.out.println("\nZimraan Sort");
         long start = System.nanoTime();
         Arrays.sort(numbers);
         long end = System.nanoTime();
