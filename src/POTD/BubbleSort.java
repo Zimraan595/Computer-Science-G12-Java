@@ -16,11 +16,16 @@ public class BubbleSort {
         }
 //        System.out.println(Arrays.toString(numbers));
 
-        BubbleSort2(numbers.clone());
+        BubbleSort(numbers.clone());
+        BubbleSort(numbers.clone());
         BubbleSort(numbers.clone());
 
-        BubbleSort(numbers.clone());
+        System.out.println("---------------------------");
+
         BubbleSort2(numbers.clone());
+        BubbleSort2(numbers.clone());
+        BubbleSort2(numbers.clone());
+
     }
 
     private static void BubbleSort(int[] numbers) {
