@@ -14,11 +14,11 @@ public class ExceptionHandling {
         try {
             num1int = Integer.parseInt(num1);
             num2int = Integer.parseInt(num2);
-
+            value = num1int/num2int;
         } catch (NumberFormatException n) {
             System.out.println("Error: Please enter valid whole numbers only.");
         } catch (ArithmeticException arithmeticException) {
-            System.out.println();
+            System.out.println("Error: Cannot divide by zero.");
         } finally {
             System.out.println("Calculation attempt logged.");
             input.close();
