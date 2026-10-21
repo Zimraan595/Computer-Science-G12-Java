@@ -94,6 +94,10 @@ public class BubbleSort {
     }
 
     private static void ZimraanSort(int[] numbers) {
-        numbers
+        long start = System.nanoTime();
+        Arrays.sort(numbers);
+        long end = System.nanoTime();
+        long elapsed = end - start;
+        System.out.println("Completed in " + (elapsed/1000000.0) + "ms");
     }
 }
