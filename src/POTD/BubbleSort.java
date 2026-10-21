@@ -15,13 +15,14 @@ public class BubbleSort {
         System.out.println(Arrays.toString(numbers));
 
         long start = System.nanoTime();
-        int swaped = 1;
+        int swaped = 0;
         int n;
-        while (swaped > 0) {
-            swaped = 0;
-            for (int i = 1; i < numbers.length-swaped; i++) {
+        int num_len = numbers.length;
+        while (swaped >= 0) {
+            int static_swaped = swaped;
+            for (int i = 1; i < num_len-static_swaped; i++) {
                 int temp;
-                n = i + swaped;
+                n = i + static_swaped;
                 System.out.println(i + " " + n);
                 int p = n - 1;
                 if (numbers[p] > numbers[n]) {
@@ -29,8 +30,11 @@ public class BubbleSort {
                     numbers[p] = numbers[n];
                     numbers[n] = temp;
                     swaped = p;
+                } else if (i == num_len - static_swaped) {
+                    if (static_swaped == swaped) {
+                        swaped = -1;
+                    }
                 }
-
             }
         }
         long end = System.nanoTime();
