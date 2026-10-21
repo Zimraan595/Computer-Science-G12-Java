@@ -4,6 +4,16 @@ import java.util.Scanner;
 public class ExceptionHandling {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println();
+        System.out.print("Enter a number: ");
+        String num1 = input.nextLine();
+        System.out.print("Enter another number: ");
+        String num2 = input.nextLine();
+        int num1int;
+        int num2int;
+        try {
+            num1int = Integer.parseInt(num1);
+            num2int = Integer.parseInt(num2);
+        }
+        catch ()
     }
 }
