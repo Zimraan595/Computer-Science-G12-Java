@@ -26,6 +26,12 @@ public class BubbleSort {
         BubbleSort2(numbers.clone());
         BubbleSort2(numbers.clone());
 
+        System.out.println("---------------------------");
+
+        ZimraanSort(numbers.clone());
+        ZimraanSort(numbers.clone());
+        ZimraanSort(numbers.clone());
+
     }
 
     private static void BubbleSort(int[] numbers) {
@@ -94,6 +100,7 @@ public class BubbleSort {
     }
 
     private static void ZimraanSort(int[] numbers) {
+        System.out.println("Zimraan Sort");
         long start = System.nanoTime();
         Arrays.sort(numbers);
         long end = System.nanoTime();
