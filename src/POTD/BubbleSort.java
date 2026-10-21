@@ -43,12 +43,14 @@ public class BubbleSort {
         System.out.println("Completed in " + (elapsed/1000000.0) + "ms");
     }
     private static void BubbleSort2(int[] numbers) {
-        int swaped = 1;
         int num_len = numbers.length;
+        int lower_bound = 0;
+        int upper_bound = num_len;
+        int swaped = 1;
         long start = System.nanoTime();
         while (swaped > 0) {
             swaped = 0;
-            for (int i = 1; i < num_len; i++) {
+            for (int i = lower_bound+1; i < upper_bound; i++) {
                 int temp;
                 int p = i - 1;
                 if (numbers[p] > numbers[i]) {
@@ -58,16 +60,18 @@ public class BubbleSort {
                     swaped = i;
                 }
             }
-            num_len = swaped;
-            for (int i = num_len-1; i > 0; i--) {
+            upper_bound = swaped;
+            for (int i = upper_bound-1; i > lower_bound; i--) {
                 int temp;
                 int p = i - 1;
                 if (numbers[p] > numbers[i]) {
                     temp = numbers[p];
                     numbers[p] = numbers[i];
                     numbers[i] = temp;
+                    swaped = i;
                 }
             }
+            lower_bound = swaped;
         }
         long end = System.nanoTime();
         long elapsed = end - start;
