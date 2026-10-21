@@ -15,8 +15,7 @@ public class ExceptionHandling {
             num1int = Integer.parseInt(num1);
             num2int = Integer.parseInt(num2);
 
-        } catch (Exception e) {
-            System.out.println(e);
+        } catch (NumberFormatException) {
             System.out.println("Error: Please enter valid whole numbers only.");
         } finally {
             System.out.println("Calculation attempt logged.");
