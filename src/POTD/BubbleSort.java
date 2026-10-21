@@ -35,7 +35,6 @@ public class BubbleSort {
                     swaped = i;
                 }
             }
-            num_len = swaped;
         }
         long end = System.nanoTime();
         long elapsed = end - start;
