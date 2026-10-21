@@ -34,11 +34,10 @@ public class BubbleSort {
                     numbers[p] = numbers[n];
                     numbers[n] = temp;
                     swaped = p;
-                } else if (i == num_len - static_swaped) {
-                    if (static_swaped == swaped) {
-                        swaped = -1;
-                    }
                 }
+            }
+            if (static_swaped == swaped) {
+                swaped = -1;
             }
         }
         long end = System.nanoTime();
