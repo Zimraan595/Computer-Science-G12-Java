@@ -15,11 +15,11 @@ public class BubbleSort {
         }
         System.out.println(Arrays.toString(numbers));
 
-        boolean swaped = true;
+        int swaped = 1;
         int num_len = numbers.length;
         long start = System.nanoTime();
-        while (swaped) {
-            swaped = false;
+        while (swaped > 0) {
+            swaped = 0;
             for (int i = 1; i < num_len; i++) {
                 int temp;
                 int p = i - 1;
@@ -27,10 +27,10 @@ public class BubbleSort {
                     temp = numbers[p];
                     numbers[p] = numbers[i];
                     numbers[i] = temp;
-                    swaped = true;
+                    swaped = p;
                 }
             }
-            num_len--;
+            num_len -= (num_len-swaped);
         }
         long end = System.nanoTime();
         long elapsed = end - start;
