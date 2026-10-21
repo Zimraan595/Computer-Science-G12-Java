@@ -14,67 +14,27 @@ public class BubbleSort {
             numbers[i] = rand.nextInt(98) + 1;
         }
         System.out.println(Arrays.toString(numbers));
+
+        int swaped = 1;
+        int num_len = numbers.length;
         long start = System.nanoTime();
-        BubbleSort2(numbers);
+        while (swaped > 0) {
+            swaped = 0;
+            for (int i = 1; i < num_len; i++) {
+                int temp;
+                int p = i - 1;
+                if (numbers[p] > numbers[i]) {
+                    temp = numbers[p];
+                    numbers[p] = numbers[i];
+                    numbers[i] = temp;
+                    swaped = i;
+                }
+            }
+            num_len = swaped;
+        }
         long end = System.nanoTime();
         long elapsed = end - start;
         System.out.println(Arrays.toString(numbers));
         System.out.println("Completed in " + (elapsed/1000000.0) + "ms");
-    }
-
-    private static void BubbleSort2(int[] numbers) {
-        int swaped = 1;
-        int num_len = numbers.length;
-        while (swaped > 0) {
-            swaped = 0;
-            for (int i = 1; i < num_len; i++) {
-                int temp;
-                int p = i - 1;
-                if (numbers[p] > numbers[i]) {
-                    temp = numbers[p];
-                    numbers[p] = numbers[i];
-                    numbers[i] = temp;
-                    swaped = p;
-                }
-            }
-            num_len = swaped;
-        }
-    }
-
-    private static void BubbleSort1(int[] numbers) {
-        int swaped = 1;
-        int num_len = numbers.length;
-        while (swaped > 0) {
-            swaped = 0;
-            for (int i = 1; i < num_len; i++) {
-                int temp;
-                int p = i - 1;
-                if (numbers[p] > numbers[i]) {
-                    temp = numbers[p];
-                    numbers[p] = numbers[i];
-                    numbers[i] = temp;
-                    swaped = p;
-                }
-            }
-        }
-    }
-
-    private static void BubbleSort3(int[] numbers) {
-        int swaped = 1;
-        int num_len = numbers.length;
-        while (swaped > 0) {
-            swaped = 0;
-            for (int i = 1; i < num_len; i++) {
-                int temp;
-                int p = i - 1;
-                if (numbers[p] > numbers[i]) {
-                    temp = numbers[p];
-                    numbers[p] = numbers[i];
-                    numbers[i] = temp;
-                    swaped = p;
-                }
-            }
-            num_len = swaped;
-        }
     }
 }
