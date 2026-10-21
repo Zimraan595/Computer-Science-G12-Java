@@ -10,10 +10,13 @@ public class ExceptionHandling {
         String num2 = input.nextLine();
         int num1int;
         int num2int;
+        int value;
         try {
             num1int = Integer.parseInt(num1);
             num2int = Integer.parseInt(num2);
+
         } catch (Exception e) {
+            System.out.println(e);
             System.out.println("Error: Please enter valid whole numbers only.");
         } finally {
             System.out.println("Calculation attempt logged.");
