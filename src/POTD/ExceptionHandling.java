@@ -13,7 +13,8 @@ public class ExceptionHandling {
         try {
             num1int = Integer.parseInt(num1);
             num2int = Integer.parseInt(num2);
+        } catch (Exception e) {
+            System.out.println("Error: Please enter valid whole numbers only.");
         }
-        catch ()
     }
 }
