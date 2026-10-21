@@ -38,8 +38,4 @@ public class BubbleSort {
         System.out.println(Arrays.toString(numbers));
         System.out.println("Completed in " + (elapsed/1000000.0) + "ms");
     }
-
-    public static int sort(int[] array) {
-        return 5;
-    }
 }
