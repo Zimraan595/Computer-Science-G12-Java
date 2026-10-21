@@ -72,6 +72,9 @@ public class BubbleSort {
                 }
             }
             lower_bound = swaped;
+            if (lower_bound == upper_bound) {
+                swaped = 0;
+            }
         }
         long end = System.nanoTime();
         long elapsed = end - start;
