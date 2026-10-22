@@ -13,14 +13,14 @@ public class ArrayExercises2 {
         //Exercise3();
         System.out.println("What is your first name?");
         String firstName = input.nextLine();
-        Character[] firstNameArrayForwards = new Character[firstName.length()];
         Character[] firstNameArrayBackwards = new Character[firstName.length()];
         for (int i = 0; i < firstName.length(); i++) {
-            firstNameArrayForwards[i] = firstName.charAt(i);
             firstNameArrayBackwards[i] = firstName.charAt(firstName.length() - 1 - i);
         }
-        System.out.println(Arrays.toString(firstNameArrayForwards));
-        System.out.println(Arrays.toString(firstNameArrayBackwards));
+        for (char letter : firstNameArrayBackwards) {
+            System.out.print(letter);
+        }
+        System.out.println();
     }
 
     private static void Exercise3() {
