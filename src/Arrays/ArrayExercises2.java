@@ -11,7 +11,18 @@ public class ArrayExercises2 {
         //Exercise2();
         int num = 1000;
         ArrayList<Integer> primeNumbers = new ArrayList<Integer>();
-        for (int i; i < 1000)
+        boolean isPrime;
+        for (int i = 2; i < num; i++) {
+            isPrime = true;
+            for (int n = 2; n < i / 2; n++) {
+                if (i % n == 0) {
+                    isPrime = false;
+                }
+            }
+            if (isPrime) {
+                primeNumbers.add(i)
+            }
+        }
     }
 
     private static void Exercise2() {
