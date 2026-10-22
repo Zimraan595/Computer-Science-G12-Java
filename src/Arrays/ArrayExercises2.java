@@ -7,7 +7,7 @@ public class ArrayExercises2 {
     public static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         //Exercise1();
-        
+        System.out.println("Guess");
     }
 
     private static void Exercise1() {
