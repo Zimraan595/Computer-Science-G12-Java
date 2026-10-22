@@ -10,6 +10,11 @@ public class ArrayExercises2 {
         //Exercise1();
         //Exercise2();
         //Exercise3();
+        //Exercise4();
+        
+    }
+
+    private static void Exercise4() {
         System.out.println("What is your first name?");
         String firstName = input.nextLine();
         Character[] firstNameArrayBackwards = new Character[firstName.length()];
