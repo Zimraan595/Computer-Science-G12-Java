@@ -9,10 +9,14 @@ public class ArrayExercises2 {
     public static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //Exercise1();
-        //Exercise2();
-        //Exercise3();
-        //Exercise4();
+        Exercise1();
+        Exercise2();
+        Exercise3();
+        Exercise4();
+        Exercise5();
+    }
+
+    private static void Exercise5() {
         String[] month = {
                 "Jan",
                 "Feb",
