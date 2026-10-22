@@ -68,7 +68,9 @@ public class ArrayExercises2 {
         for (int i = 0; i < rainFall.length; i++) {
             System.out.println(month[i]);
             System.out.println(rainFall[i]);
-            System.out.println(comments[i]);
+            if (comments[i] != null) {
+                System.out.println(comments[i]);
+            }
             System.out.println();
         }
     }
