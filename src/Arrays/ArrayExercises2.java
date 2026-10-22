@@ -9,9 +9,9 @@ public class ArrayExercises2 {
     public static void main(String[] args) {
         //Exercise1();
         //Exercise2();
-        //Exercise3();
+        Exercise3();
         //Exercise4();
-        
+
     }
 
     private static void Exercise4() {
@@ -42,7 +42,9 @@ public class ArrayExercises2 {
                 primeNumbers.add(i);
             }
         }
-        System.out.println(primeNumbers);
+        System.out.println("Enter a number between 1-" + primeNumbers.toArray().length);
+        int n = input.nextInt();
+        System.out.println(primeNumbers.get(n));
     }
 
     private static void Exercise2() {
