@@ -10,8 +10,20 @@ public class ArrayExercises2 {
         //Exercise1();
         ArrayList<Integer> guesses = new ArrayList<Integer>();
         int num = rand.nextInt(99) + 1;
+        int index = 0;
         System.out.println("Guess the number from 1-100");
-        while (num )
+        while (guesses.contains(num)) {
+            System.out.print("Guess " + ++index + ": ");
+            int guess = input.nextInt();
+            input.nextLine();
+            guesses.add(guess);
+            if (guess > num) {
+                System.out.println("Lower");
+            } else if (guess < num) {
+                System.out.println("Higher");
+            }
+        }
+        System.out.print("You Got it!");
     }
 
     private static void Exercise1() {
