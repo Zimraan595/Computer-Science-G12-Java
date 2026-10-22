@@ -20,9 +20,10 @@ public class ArrayExercises2 {
                 }
             }
             if (isPrime) {
-                primeNumbers.add(i)
+                primeNumbers.add(i);
             }
         }
+        System.out.println(primeNumbers);
     }
 
     private static void Exercise2() {
