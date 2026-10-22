@@ -28,28 +28,49 @@ public class ArrayExercises2 {
                 "Dec"
         };
         int[] rainFall = new int[12];
-        int[] comments = new int[12];
+        String[] comments = new String[12];
         for (int i = 0; i < rainFall.length; i++) {
             System.out.print("Enter the rainfall for " + month[i] + ": ");
             int rainfall = input.nextInt();
             input.nextLine();
             rainFall[i] = rainfall;
         }
+        int[] rawRainFall = rainFall.clone();
+        int index = 0;
         int max1 = 0;
         int max2 = 0;
         int max3 = 0;
         for (int i = 0; i < rainFall.length; i++) {
             if (max1 < rainFall[i]) {
+                index = i;
                 max1 = rainFall[i];
             }
-            if (rainFall[i] < max1) {
+        }
+        rainFall[index] = 0;
+        comments[index] = "Bring and Umbrella";
+        for (int i = 0; i < rainFall.length; i++) {
+            if (max2 < rainFall[i]) {
+                index = i;
                 max2 = rainFall[i];
             }
-            if (rainFall[i] < max2) {
-                max3 = rainFall[i];
+        }
+        rainFall[index] = 0;
+        comments[index] = "Bring and Umbrella";
+        for (int i = 0; i < rainFall.length; i++) {
+            if (max2 < rainFall[i]) {
+                index = i;
+                max2 = rainFall[i];
             }
         }
-        System.out.println(max1 + " " + max2 + " " + max3);
+        comments[index] = "Bring and Umbrella";
+        rainFall = rawRainFall.clone();
+
+        for (int i = 0; i < rainFall.length; i++) {
+            System.out.println(month[i]);
+            System.out.println(rainFall[i]);
+            System.out.println(comments[i]);
+            System.out.println();
+        }
     }
 
     private static void Exercise4() {
