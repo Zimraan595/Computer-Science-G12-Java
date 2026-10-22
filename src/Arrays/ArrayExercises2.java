@@ -11,7 +11,7 @@ public class ArrayExercises2 {
         //Exercise2();
         int num = 1000;
         ArrayList<Integer> primeNumbers = new ArrayList<Integer>();
-        
+        for (int i; i < 1000)
     }
 
     private static void Exercise2() {
