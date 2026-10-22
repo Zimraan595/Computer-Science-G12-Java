@@ -1,4 +1,5 @@
 package Arrays;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -13,10 +14,13 @@ public class ArrayExercises2 {
         System.out.println("What is your first name?");
         String firstName = input.nextLine();
         Character[] firstNameArrayForwards = new Character[firstName.length()];
-        Character[] firstNameArrayBackwards = new Character[[firstName.length()];
+        Character[] firstNameArrayBackwards = new Character[firstName.length()];
         for (int i = 0; i < firstName.length(); i++) {
             firstNameArrayForwards[i] = firstName.charAt(i);
+            firstNameArrayBackwards[i] = firstName.charAt(firstName.length() - 1 - i);
         }
+        System.out.println(Arrays.toString(firstNameArrayForwards));
+        System.out.println(Arrays.toString(firstNameArrayBackwards));
     }
 
     private static void Exercise3() {
