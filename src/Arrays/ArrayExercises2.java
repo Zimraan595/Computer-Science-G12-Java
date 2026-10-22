@@ -8,6 +8,11 @@ public class ArrayExercises2 {
     public static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         //Exercise1();
+        //Exercise2();
+        
+    }
+
+    private static void Exercise2() {
         ArrayList<Integer> guesses = new ArrayList<Integer>();
         int num = rand.nextInt(99) + 1;
         int index = 0;
