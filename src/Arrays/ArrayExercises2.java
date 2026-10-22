@@ -9,6 +9,8 @@ public class ArrayExercises2 {
     public static void main(String[] args) {
         //Exercise1();
         //Exercise2();
+        int num = 1000;
+        ArrayList<Integer> primeNumbers = new ArrayList<Integer>();
         
     }
 
