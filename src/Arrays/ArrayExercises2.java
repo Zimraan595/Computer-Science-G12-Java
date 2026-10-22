@@ -27,7 +27,7 @@ public class ArrayExercises2 {
                 "Nov",
                 "Dec"
         };
-        
+        int[] rainFall = new int[];
     }
 
     private static void Exercise4() {
