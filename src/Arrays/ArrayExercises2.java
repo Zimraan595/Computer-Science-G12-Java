@@ -44,7 +44,7 @@ public class ArrayExercises2 {
         }
         System.out.println("Enter a number between 1-" + primeNumbers.toArray().length);
         int n = input.nextInt();
-        System.out.println(primeNumbers.get(n));
+        System.out.println(primeNumbers.get(n-1));
     }
 
     private static void Exercise2() {
