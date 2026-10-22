@@ -11,7 +11,10 @@ public class ArrayExercises2 {
         //Exercise2();
         //Exercise3();
         //Exercise4();
-        
+        String[] month = {
+                "Jan",
+                ""
+        };
     }
 
     private static void Exercise4() {
