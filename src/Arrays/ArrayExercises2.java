@@ -27,7 +27,10 @@ public class ArrayExercises2 {
                 "Nov",
                 "Dec"
         };
-        int[] rainFall = new int[];
+        int[] rainFall = new int[12];
+        for (int i = 0; i <= rainFall.length; i++) {
+            System.out.print("Enter the rainfall for " + month[i] + ": ");
+        }
     }
 
     private static void Exercise4() {
