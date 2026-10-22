@@ -57,9 +57,9 @@ public class ArrayExercises2 {
         rainFall[index] = 0;
         comments[index] = "Bring and Umbrella";
         for (int i = 0; i < rainFall.length; i++) {
-            if (max2 < rainFall[i]) {
+            if (max3 < rainFall[i]) {
                 index = i;
-                max2 = rainFall[i];
+                max3 = rainFall[i];
             }
         }
         comments[index] = "Bring and Umbrella";
