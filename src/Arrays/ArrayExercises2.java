@@ -29,7 +29,7 @@ public class ArrayExercises2 {
         };
         int[] rainFall = new int[12];
         int[] comments = new int[12];
-        for (int i = 0; i <= rainFall.length; i++) {
+        for (int i = 0; i < rainFall.length; i++) {
             System.out.print("Enter the rainfall for " + month[i] + ": ");
             int rainfall = input.nextInt();
             input.nextLine();
@@ -38,7 +38,7 @@ public class ArrayExercises2 {
         int max1 = 0;
         int max2 = 0;
         int max3 = 0;
-        for (int i = 0; i <= rainFall.length; i++) {
+        for (int i = 0; i < rainFall.length; i++) {
             if (max1 < rainFall[i]) {
                 max1 = rainFall[i];
             }
