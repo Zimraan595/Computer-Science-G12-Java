@@ -14,7 +14,7 @@ public class ArrayExercises2 {
         boolean isPrime;
         for (int i = 2; i < num; i++) {
             isPrime = true;
-            for (int n = 2; n < i / 2; n++) {
+            for (int n = 2; n <= i / 2; n++) {
                 if (i % n == 0) {
                     isPrime = false;
                 }
