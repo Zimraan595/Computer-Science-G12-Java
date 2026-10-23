@@ -87,7 +87,13 @@ public class ArrayExercises2 {
     }
 
     private static boolean hasWon(String[][] b, String p) {
-        
+        for (int i = 0; i < 3; i++) {
+            if (b[i][0].equals(p) && b[i][1].equals(p) && b[i][2].equals(p)) return true;
+            if (b[0][i].equals(p) && b[1][i].equals(p) && b[2][i].equals(p)) return true;
+        }
+        if (b[0][0].equals(p) && b[1][1].equals(p) && b[2][2].equals(p)) return true;
+        if (b[0][2].equals(p) && b[1][1].equals(p) && b[2][0].equals(p)) return true;
+        return false;
     }
 
     private static void PrintBoard(String[][] board, int width) {
