@@ -14,6 +14,7 @@ public class ArrayExercises2 {
         Exercise3();
         Exercise4();
         Exercise5();
+        
     }
 
     private static void Exercise5() {
