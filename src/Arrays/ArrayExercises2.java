@@ -33,15 +33,21 @@ public class ArrayExercises2 {
         }
 
         int width = 1;
+        int selection;
 
         while (gameLoop) {
-            System.out.println("Game board");
+            System.out.println("\nGame board");
             PrintBoard(board, width);
-            System.out.println("\nPlease make a selection");
+            System.out.println("\nSelection board");
             PrintBoard(selectionBoard, width);
-            int selection = input.nextInt();
+            System.out.println("P1 - please make a selection");
+            selection = input.nextInt();
             input.nextLine();
-            
+            board[selection/3][selection%3] = "x";
+            System.out.println("P2 - please make a selection");
+            selection = input.nextInt();
+            input.nextLine();
+            board[selection/3][selection%3] = "o";
         }
     }
 
