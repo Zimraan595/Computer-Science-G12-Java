@@ -25,6 +25,7 @@ public class ArrayExercises2 {
         }
 
         while (gameLoop) {
+            gameLoop = false;
             for (int row = 0; row < board.length; row++) {
                 for (int col = 0; col < board[row].length; col++) {
                     System.out.print(board[row][col]);
@@ -34,7 +35,9 @@ public class ArrayExercises2 {
                         System.out.println();
                     }
                 }
-                System.out.println("");
+                if (row != board.length - 1) {
+                    System.out.println("—————");
+                }
             }
         }
     }
