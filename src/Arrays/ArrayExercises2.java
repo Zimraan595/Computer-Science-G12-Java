@@ -60,8 +60,9 @@ public class ArrayExercises2 {
                         System.out.println("That position is taken");
                     }
                 }
-
             }
+
+            if ()
         }
     }
 
