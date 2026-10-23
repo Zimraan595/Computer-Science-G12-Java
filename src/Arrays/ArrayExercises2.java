@@ -62,7 +62,7 @@ public class ArrayExercises2 {
                 }
             }
 
-            if ()
+            if (board.)
         }
     }
 
