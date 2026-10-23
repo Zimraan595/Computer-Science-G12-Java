@@ -40,12 +40,20 @@ public class ArrayExercises2 {
             PrintBoard(board, width);
             System.out.println("\nSelection board");
             PrintBoard(selectionBoard, width);
-            System.out.println("P1 - please make a selection");
-            selection = input.nextInt();
-            input.nextLine();
-            board[selection/3][selection%3] = "x";
+
+            for (int i = 1; i <= 2; i++) {
+                System.out.println("P" + i + " - please make a selection");
+                selection = input.nextInt() - 1;
+                input.nextLine();
+                int row = selection / 3;
+                int col = selection % 3;
+                if (board[row][col].equals(" ")) {
+                    board[row][col] = "x";
+                }
+            }
+
             System.out.println("P2 - please make a selection");
-            selection = input.nextInt();
+            selection = input.nextInt()-1;
             input.nextLine();
             board[selection/3][selection%3] = "o";
         }
