@@ -14,7 +14,11 @@ public class ArrayExercises2 {
         Exercise3();
         Exercise4();
         Exercise5();
-        
+        System.out.println("Lets play tic tak toe");
+        boolean gameLoop = true;
+        while (gameLoop) {
+            
+        }
     }
 
     private static void Exercise5() {
