@@ -9,15 +9,33 @@ public class ArrayExercises2 {
     public static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Exercise1();
-        Exercise2();
-        Exercise3();
-        Exercise4();
-        Exercise5();
+//        Exercise1();
+//        Exercise2();
+//        Exercise3();
+//        Exercise4();
+//        Exercise5();
         System.out.println("Lets play tic tak toe");
         boolean gameLoop = true;
+        String[][] board = new String[3][3];
+
+        for (int row = 0; row < board.length; row++) {
+            for (int col = 0; col < board[row].length; col++) {
+                board[row][col] = " ";
+            }
+        }
+
         while (gameLoop) {
-            
+            for (int row = 0; row < board.length; row++) {
+                for (int col = 0; col < board[row].length; col++) {
+                    System.out.print(board[row][col]);
+                    if (col != board[row].length - 1) {
+                        System.out.print("|");
+                    } else {
+                        System.out.println();
+                    }
+                }
+                System.out.println("");
+            }
         }
     }
 
