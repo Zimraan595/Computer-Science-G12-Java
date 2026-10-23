@@ -61,41 +61,33 @@ public class ArrayExercises2 {
                         System.out.println("That position is taken");
                     }
                 }
-            }
 
-            boolean contains = false;
-            for (String[] row : board) {
-                for (String item : row) {
-                    if (item.equals(" ")) {
-                        contains = true;
-                    }
-                }
-            }
-
-            int winner = 0;
-            for (int i = 1; i <= 2; i++) {
-                winner = i;
-                for (int row = 0; row < board.length; row++) {
-                    if (Arrays.stream(board[row]).allMatch(playerChar[i - 1]::equals)) {
-                        winner = i;
-                        break;
-                    } else {
-                        if (!(board[row][row].equals(playerChar[i - 1]) && board[board.length-row-1][board.length-row-1].equals(playerChar[i - 1]))) {
-                            winner = 0;
-                        }
-
-                    }
-                }
-                if (winner != 0) {
+                if (hasWon(board, playerChar[i - 1])) {
+                    PrintBoard(board, width);
+                    System.out.println("P" + i + " Wins!");
+                    gameLoop = false;
                     break;
                 }
-            }
 
-            if (!contains || winner != 0) {
-                System.out.println("P" + winner + " Wins!");
-                gameLoop = false;
+                boolean full = true;
+                for (String[] r : board) {
+                    for (String item : r) {
+                        if (item.equals(" ")) full = false;
+                    }
+                }
+                if (full) {
+                    PrintBoard(board, width);
+                    System.out.println("It's a tie!");
+                    gameLoop = false;
+                    break;
+                }
+
             }
         }
+    }
+
+    private static boolean hasWon(String[][] b, String p) {
+        
     }
 
     private static void PrintBoard(String[][] board, int width) {
