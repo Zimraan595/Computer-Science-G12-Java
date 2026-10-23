@@ -34,6 +34,10 @@ public class ArrayExercises2 {
 
         int width = 1;
         int selection;
+        String[] playerChar = {
+                "x",
+                "o"
+        };
 
         while (gameLoop) {
             System.out.println("\nGame board");
@@ -42,20 +46,22 @@ public class ArrayExercises2 {
             PrintBoard(selectionBoard, width);
 
             for (int i = 1; i <= 2; i++) {
-                System.out.println("P" + i + " - please make a selection");
-                selection = input.nextInt() - 1;
-                input.nextLine();
-                int row = selection / 3;
-                int col = selection % 3;
-                if (board[row][col].equals(" ")) {
-                    board[row][col] = "x";
+                boolean choiceMade = false;
+                while (!choiceMade) {
+                    System.out.println("P" + i + " - please make a selection");
+                    selection = input.nextInt() - 1;
+                    input.nextLine();
+                    int row = selection / 3;
+                    int col = selection % 3;
+                    if (board[row][col].equals(" ")) {
+                        board[row][col] = playerChar[i - 1];
+                        choiceMade = true;
+                    } else {
+                        System.out.println("That position is taken");
+                    }
                 }
-            }
 
-            System.out.println("P2 - please make a selection");
-            selection = input.nextInt()-1;
-            input.nextLine();
-            board[selection/3][selection%3] = "o";
+            }
         }
     }
 
