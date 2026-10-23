@@ -62,7 +62,18 @@ public class ArrayExercises2 {
                 }
             }
 
-            if (board.)
+            boolean contains = false;
+            for (String[] row : board) {
+                for (String item : row) {
+                    if (item.equals(" ")) {
+                        contains = true;
+                    }
+                }
+            }
+
+            if (!contains) {
+                gameLoop = false;
+            }
         }
     }
 
