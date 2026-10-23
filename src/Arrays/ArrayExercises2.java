@@ -24,19 +24,21 @@ public class ArrayExercises2 {
             }
         }
 
+        int width = 1;
+
         while (gameLoop) {
             gameLoop = false;
             for (int row = 0; row < board.length; row++) {
                 for (int col = 0; col < board[row].length; col++) {
                     System.out.print(board[row][col]);
                     if (col != board[row].length - 1) {
-                        System.out.print("|");
+                        System.out.print(" ".repeat(width) + "|" + " ".repeat(width));
                     } else {
                         System.out.println();
                     }
                 }
                 if (row != board.length - 1) {
-                    System.out.println("—————");
+                    System.out.println("———" + "—".repeat(width*4));
                 }
             }
         }
