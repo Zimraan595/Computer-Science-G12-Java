@@ -29,15 +29,19 @@ public class ArrayExercises2 {
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[row].length; col++) {
                 selectionBoard[row][col] = String.valueOf(++index);
-
             }
         }
 
         int width = 1;
 
         while (gameLoop) {
+            System.out.println("Game board");
             PrintBoard(board, width);
-
+            System.out.println("\nPlease make a selection");
+            PrintBoard(selectionBoard, width);
+            int selection = input.nextInt();
+            input.nextLine();
+            
         }
     }
 
