@@ -20,7 +20,7 @@ public class ArrayExercises2 {
 
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[row].length; col++) {
-                board[row][col] = " ";
+                board[row][col] = "x";
             }
         }
 
