@@ -17,29 +17,42 @@ public class ArrayExercises2 {
         System.out.println("Lets play tic tak toe");
         boolean gameLoop = true;
         String[][] board = new String[3][3];
+        String[][] selectionBoard = new String[3][3];
 
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[row].length; col++) {
-                board[row][col] = "x";
+                board[row][col] = " ";
+            }
+        }
+
+        int index = 0;
+        for (int row = 0; row < board.length; row++) {
+            for (int col = 0; col < board[row].length; col++) {
+                selectionBoard[row][col] = String.valueOf(++index);
+
             }
         }
 
         int width = 1;
 
         while (gameLoop) {
-            gameLoop = false;
-            for (int row = 0; row < board.length; row++) {
-                for (int col = 0; col < board[row].length; col++) {
-                    System.out.print(board[row][col]);
-                    if (col != board[row].length - 1) {
-                        System.out.print(" ".repeat(width) + "|" + " ".repeat(width));
-                    } else {
-                        System.out.println();
-                    }
+            PrintBoard(board, width);
+
+        }
+    }
+
+    private static void PrintBoard(String[][] board, int width) {
+        for (int row = 0; row < board.length; row++) {
+            for (int col = 0; col < board[row].length; col++) {
+                System.out.print(board[row][col]);
+                if (col != board[row].length - 1) {
+                    System.out.print(" ".repeat(width) + "|" + " ".repeat(width));
+                } else {
+                    System.out.println();
                 }
-                if (row != board.length - 1) {
-                    System.out.println("—————" + "—".repeat(width*4));
-                }
+            }
+            if (row != board.length - 1) {
+                System.out.println("—————" + "—".repeat(width *4));
             }
         }
     }
