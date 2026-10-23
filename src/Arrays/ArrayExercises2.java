@@ -72,7 +72,7 @@ public class ArrayExercises2 {
             }
 
             int winner = 0;
-            
+
 
             if (!contains || winner != 0) {
                 gameLoop = false;
