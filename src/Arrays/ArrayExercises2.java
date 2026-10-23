@@ -38,7 +38,7 @@ public class ArrayExercises2 {
                     }
                 }
                 if (row != board.length - 1) {
-                    System.out.println("———" + "—".repeat(width*4));
+                    System.out.println("—————" + "—".repeat(width*4));
                 }
             }
         }
