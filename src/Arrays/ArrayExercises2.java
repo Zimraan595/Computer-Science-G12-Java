@@ -1,5 +1,6 @@
 package Arrays;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -72,9 +73,26 @@ public class ArrayExercises2 {
             }
 
             int winner = 0;
+            for (int i = 1; i <= 2; i++) {
+                winner = i;
+                for (int row = 0; row < board.length; row++) {
+                    if (Arrays.stream(board[row]).allMatch(playerChar[i - 1]::equals)) {
+                        winner = i;
+                        break;
+                    } else {
+                        if (!(board[row][row].equals(playerChar[i - 1]) && board[board.length-row-1][board.length-row-1].equals(playerChar[i - 1]))) {
+                            winner = 0;
+                        }
 
+                    }
+                }
+                if (winner != 0) {
+                    break;
+                }
+            }
 
             if (!contains || winner != 0) {
+                System.out.println("P" + winner + " Wins!");
                 gameLoop = false;
             }
         }
