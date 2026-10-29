@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Files {
     static void main(String[] args) {
-        String filePath = "name.txt";
+        String filePath = "src/POTD/name.txt";
         File nameTextFile = new File(filePath);
         try {
             if (nameTextFile.createNewFile()) {
