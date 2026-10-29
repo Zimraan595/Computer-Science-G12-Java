@@ -39,6 +39,11 @@ public class Arrays {
             sum += mark;
         }
 
+        marks2.add(76);
+        marks2.add(84);
+
+        marks2.remove(2);
+
         System.out.println("Average: " + (sum/(double)(length)));
         
 
