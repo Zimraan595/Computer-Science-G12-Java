@@ -9,5 +9,9 @@ public class Arrays {
         int length = input.nextInt();
         input.nextLine();
 
+        int[] marks = new int[length];
+
+        
+
     }
 }
