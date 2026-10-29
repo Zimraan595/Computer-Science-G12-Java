@@ -18,7 +18,7 @@ public class Files {
             nameTextFileWriter.write("Hi this was made by my program");
             nameTextFileWriter.close();
 
-            
+            System.out.println(nameTextFile.);
         } catch (IOException e) {
             System.out.println("An error occurred.");
         }
