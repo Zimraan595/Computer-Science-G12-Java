@@ -23,7 +23,8 @@ public class Arrays {
 
         System.out.println("Average: " + (sum/(double)(marks.length)));
 
-        
+        ArrayList<Integer> marks2 = new ArrayList<>();
+
 
 
     }
