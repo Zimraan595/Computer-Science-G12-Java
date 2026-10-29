@@ -51,11 +51,5 @@ public class Arrays {
         }
 
         System.out.println("Average: " + (sum/(double)(length)));
-
-
-        
-
-
-
     }
 }
