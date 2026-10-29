@@ -11,7 +11,9 @@ public class Arrays {
 
         int[] marks = new int[length];
 
-        
+        for (int i; i <= marks.length; i++) {
+            
+        }
 
     }
 }
