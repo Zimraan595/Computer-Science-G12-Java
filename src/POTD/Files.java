@@ -6,14 +6,14 @@ public class Files {
     static void main(String[] args) {
         File nameTextFile = new File("name.txt");
         try {
-            if (nameTextFile.createNewFile()) {           // Try to create the file
+            if (nameTextFile.createNewFile()) {
                 System.out.println("File created: " + nameTextFile.getName());
             } else {
                 System.out.println("File already exists.");
             }
         } catch (IOException e) {
             System.out.println("An error occurred.");
-
         }
+        
     }
 }
