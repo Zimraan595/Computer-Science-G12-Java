@@ -21,10 +21,25 @@ public class Arrays {
             sum += mark;
         }
 
-        System.out.println("Average: " + (sum/(double)(marks.length)));
+        System.out.println("Average: " + (sum/(double)(marks.length)) + "\n");
 
-        ArrayList<Integer> marks2 = new ArrayList<>();
+        ArrayList<Integer> marks2 = new ArrayList<Integer>();
 
+        System.out.print("Length of new Array: ");
+        length = input.nextInt();
+        input.nextLine();
+
+        sum = 0;
+
+        for (int i = 0; i < length; i++) {
+            System.out.print((i + 1) + ". ");
+            int mark = input.nextInt();
+            input.nextLine();
+            marks2.add(mark);
+            sum += mark;
+        }
+
+        System.out.println("Average: " + (sum/(double)(length)));
         
 
 
