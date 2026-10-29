@@ -11,8 +11,11 @@ public class Arrays {
 
         int[] marks = new int[length];
 
-        for (int i; i <= marks.length; i++) {
-            
+        for (int i = 0; i < marks.length; i++) {
+            System.out.print((i + 1) + ". ");
+            int mark = input.nextInt();
+            input.nextLine();
+            marks[i] = mark;
         }
 
     }
