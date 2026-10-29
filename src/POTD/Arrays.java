@@ -44,7 +44,15 @@ public class Arrays {
 
         marks2.remove(2);
 
+        System.out.println("Fist Value: " + marks2.getFirst());
+
+        for (int i : marks2) {
+            System.out.println(i);
+        }
+
         System.out.println("Average: " + (sum/(double)(length)));
+
+
         
 
 
