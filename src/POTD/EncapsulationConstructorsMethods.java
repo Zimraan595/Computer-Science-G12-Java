@@ -1,14 +1,14 @@
 package POTD;
-
-import java.awt.*;
+import java.util.Random;
 
 class Student {
+    private static Random rand = new Random();
     private int studentID;
     private String studentName;
     private double gpa;
 
     public Student() {
-        this(0, "Unknown", 0.0);
+        this(rand.nextInt(10000) + 1000, "Unknown", 0.0);
     }
 
     public Student(int studentID, String studentName) {
@@ -56,6 +56,8 @@ class Student {
 class EncapsulationConstructorsMethods {
     public static void main(String[] args) {
         Student student1 = new Student();
-        Student student2 = new Student()
+        Student student2 = new Student(101, "Alice Smith");
+        Student student3 = new Student(102, "Bob Jones", 3.8);
+        
     }
 }
