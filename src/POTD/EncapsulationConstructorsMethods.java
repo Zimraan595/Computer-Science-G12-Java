@@ -15,10 +15,8 @@ class Student {
 
     public Student(int studentID, String studentName, double gpa) {
         this.studentID = studentID;
-        this.studentName = studentName;
-        if (gpa >= 0 && gpa <= 4) {
-            this.gpa = gpa;
-        }
+        this.setStudentName(studentName);
+        this.setGpa(gpa);
     }
 
     public int getStudentID() {
@@ -39,8 +37,10 @@ class Student {
         }
     }
 
-    public void setStudentID(int studentID) {
-        
+    public void setGpa(double gpa) {
+        if (gpa >= 0 && gpa <= 4) {
+            this.gpa = gpa;
+        }
     }
 }
 
