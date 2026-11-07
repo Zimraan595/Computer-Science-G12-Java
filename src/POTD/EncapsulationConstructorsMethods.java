@@ -60,7 +60,11 @@ class EncapsulationConstructorsMethods {
         Student student3 = new Student(102, "Bob Jones", 3.8);
         Student student4 = new Student(103, "Charlie Brown", 2.5);
 
-        
+        Student[] classroom = {student1, student2, student3, student4};
+
+        for (Student student : classroom) {
+            student.displayStudentInfo();
+        }
 
 
     }
