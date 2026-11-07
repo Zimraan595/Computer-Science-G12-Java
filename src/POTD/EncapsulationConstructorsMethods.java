@@ -58,6 +58,8 @@ class EncapsulationConstructorsMethods {
         Student student1 = new Student();
         Student student2 = new Student(101, "Alice Smith");
         Student student3 = new Student(102, "Bob Jones", 3.8);
+        Student student4 = new Student(103, "Charlie Brown", 2.5);
+
         
     }
 }
