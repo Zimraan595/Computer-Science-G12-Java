@@ -1,4 +1,5 @@
 package POTD;
+import java.awt.*;
 import java.util.Random;
 
 class Student {
@@ -64,7 +65,10 @@ class EncapsulationConstructorsMethods {
 
         for (Student student : classroom) {
             student.displayStudentInfo();
+            System.out.println();
         }
+
+        System.out.println(student2.getStudentName() + " has a gpa of " + student2.getGpa());
 
 
     }
