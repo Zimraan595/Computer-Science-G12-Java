@@ -46,12 +46,16 @@ class Student {
     }
 
     public void displayStudentInfo() {
-        System.out.println();
+        System.out.println("Student Profile");
+        System.out.println("Name: " + studentName);
+        System.out.println("ID: " + studentID);
+        System.out.println("GPA: " + gpa);
     }
 }
 
 class EncapsulationConstructorsMethods {
     public static void main(String[] args) {
-
+        Student student1 = new Student();
+        
     }
 }
