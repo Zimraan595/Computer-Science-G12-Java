@@ -1,5 +1,7 @@
 package POTD;
 
+import java.awt.*;
+
 class Student {
     private int studentID;
     private String studentName;
@@ -41,6 +43,10 @@ class Student {
         if (gpa >= 0 && gpa <= 4) {
             this.gpa = gpa;
         }
+    }
+
+    public void displayStudentInfo() {
+        System.out.println();
     }
 }
 
