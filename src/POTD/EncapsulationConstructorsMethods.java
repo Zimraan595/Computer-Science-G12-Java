@@ -73,6 +73,7 @@ class EncapsulationConstructorsMethods {
 
         student2.setGpa(3.9);
         student2.displayStudentInfo();
+        System.out.println();
 
         student3.setGpa(5.5);
 
