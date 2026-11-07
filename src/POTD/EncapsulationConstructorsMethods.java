@@ -43,6 +43,8 @@ class Student {
     public void setGpa(double gpa) {
         if (gpa >= 0 && gpa <= 4) {
             this.gpa = gpa;
+        } else {
+            System.out.println("ERROR: gpa mus be between 0.0 and 4.0 (inc)");
         }
     }
 
@@ -75,6 +77,7 @@ class EncapsulationConstructorsMethods {
 
         student3.setGpa(5.5);
 
+        student4.setName("");
 
 
     }
