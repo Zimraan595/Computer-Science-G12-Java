@@ -43,7 +43,7 @@ class Student {
         if (gpa >= 0 && gpa <= 4) {
             this.gpa = gpa;
         } else {
-            System.out.println("ERROR: gpa mus be between 0.0 and 4.0 (inc)");
+            System.out.println("ERROR: gpa must be between 0.0 and 4.0 (inc)");
         }
     }
 
