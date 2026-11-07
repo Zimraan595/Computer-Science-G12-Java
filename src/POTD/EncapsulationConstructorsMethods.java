@@ -1,5 +1,4 @@
 package POTD;
-import java.awt.*;
 import java.util.Random;
 
 class Student {
@@ -18,7 +17,7 @@ class Student {
 
     public Student(int studentID, String studentName, double gpa) {
         this.studentID = studentID;
-        this.setStudentName(studentName);
+        this.setName(studentName);
         this.setGpa(gpa);
     }
 
@@ -34,7 +33,7 @@ class Student {
         return gpa;
     }
 
-    public void setStudentName(String name) {
+    public void setName(String name) {
         if (!name.isBlank()) {
             studentName = name;
         }
@@ -78,7 +77,5 @@ class EncapsulationConstructorsMethods {
         student3.setGpa(5.5);
 
         student4.setName("");
-
-
     }
 }
