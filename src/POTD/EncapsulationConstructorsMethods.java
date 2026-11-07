@@ -32,6 +32,16 @@ class Student {
     public double getGpa() {
         return gpa;
     }
+
+    public void setStudentName(String name) {
+        if (!name.isBlank()) {
+            studentName = name;
+        }
+    }
+
+    public void setStudentID(int studentID) {
+        
+    }
 }
 
 class EncapsulationConstructorsMethods {
