@@ -70,6 +70,9 @@ class EncapsulationConstructorsMethods {
 
         System.out.println(student2.getStudentName() + " has a gpa of " + student2.getGpa());
 
+        student2.setGpa(3.9);
+        
+
 
     }
 }
