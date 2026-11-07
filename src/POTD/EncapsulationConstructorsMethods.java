@@ -20,6 +20,18 @@ class Student {
             this.gpa = gpa;
         }
     }
+
+    public int getStudentID() {
+        return studentID;
+    }
+
+    public String getStudentName() {
+        return studentName;
+    }
+
+    public double getGpa() {
+        return gpa;
+    }
 }
 
 class EncapsulationConstructorsMethods {
