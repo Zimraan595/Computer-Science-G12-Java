@@ -54,15 +54,15 @@ class Student {
         System.out.println("GPA: " + gpa);
     }
 
+    @Override
     public String toString() {
         return "Name: " + studentName +
         " ID: " + studentID +
         " GPA: " + gpa;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
+    public boolean equals(Student other) {
+        return studentID == other.studentID && studentName.equals(other.studentName) && gpa == other.gpa;
     }
 }
 
@@ -89,5 +89,7 @@ class EncapsulationConstructorsMethods {
         student3.setGpa(5.5);
 
         student4.setName("");
+
+        System.out.println(student1);
     }
 }
