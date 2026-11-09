@@ -54,12 +54,12 @@ class Student {
         System.out.println("GPA: " + gpa);
     }
 
-    @Override
-    public String toString() {
-        return "Name: " + studentName +
-        " ID: " + studentID +
-        " GPA: " + gpa;
-    }
+//    @Override
+//    public String toString() {
+//        return "Name: " + studentName +
+//        " ID: " + studentID +
+//        " GPA: " + gpa;
+//    }
 
     public boolean equals(Student other) {
         return studentID == other.studentID && studentName.equals(other.studentName) && gpa == other.gpa;
