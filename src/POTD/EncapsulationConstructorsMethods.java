@@ -53,6 +53,14 @@ class Student {
         System.out.println("ID: " + studentID);
         System.out.println("GPA: " + gpa);
     }
+
+    public String toString() {
+        return "Name: " + studentName +
+        " ID: " + studentID +
+        " GPA: " + gpa;
+    }
+
+    public 
 }
 
 class EncapsulationConstructorsMethods {
