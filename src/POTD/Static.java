@@ -2,19 +2,16 @@ package POTD;
 
 public class Static {
     public static void main(String[] args) {
-        
+        Song songs = new Song();
     }
 }
 
 class Song {
     private static int versesCounter = 0;
 
-    public Song() {
-        versesCounter++;
-    }
-
-    public void verse(String animal, String noise)
+    public void MacDonald(String animal, String noise)
     {
+        versesCounter++;
         System.out.println( "Old MacDonald had a farm" );
         System.out.println( "E-I-E-I-O" );
         System.out.println( "And on that farm he had a " + animal );
