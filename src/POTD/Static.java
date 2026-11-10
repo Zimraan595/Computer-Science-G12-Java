@@ -3,6 +3,9 @@ package POTD;
 public class Static {
     public static void main(String[] args) {
         Song songs = new Song();
+        songs.MacDonald("pig", "oink");
+        songs.MacDonald("cow", "moo");
+        songs.MacDonald("chicken", "cluck");
     }
 }
 
