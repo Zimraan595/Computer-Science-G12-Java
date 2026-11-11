@@ -41,5 +41,9 @@ class Monkey {
         return age < 4;
     }
 
+    public boolean canBeLeader() {
+        return  age >= 10;
+    }
+
     
 }
