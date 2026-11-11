@@ -38,6 +38,6 @@ class Monkey {
     }
 
     public boolean isBaby() {
-        return 
+        return a <=
     }
 }
