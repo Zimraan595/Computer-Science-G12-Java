@@ -11,7 +11,7 @@ class Monkey {
     private int age;
 
     public Monkey() {
-        
+        this("[first name]");
     }
 
     public Monkey(String firstName) {
