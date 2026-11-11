@@ -82,4 +82,7 @@ class Monkey {
 
 public class CreatingClasses {
     Monkey m1 = new Monkey();
+    Monkey m2 = new Monkey();
+
+    m2.setAg
 }
