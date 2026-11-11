@@ -85,10 +85,15 @@ public class CreatingClasses {
         Monkey m1 = new Monkey();
         m1.setGender("male");
         m1.setAge(11);
+
         Monkey m2 = new Monkey();
         m2.setGender("female");
         m2.setAge(2);
 
-        
+        m1.setFirstName("Alan");
+        m1.setLastName("Turning");
+
+        System.out.println(m1.);
+
     }
 }
