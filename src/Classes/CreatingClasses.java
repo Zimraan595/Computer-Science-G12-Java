@@ -102,6 +102,6 @@ public class CreatingClasses {
         System.out.println(m1.fullName() + " " + (m1.isBaby() ? "is " : "is not ") + "eligible to be a monkey leader");
         System.out.println(m2.fullName() + " " + (m2.isBaby() ? "is " : "is not ") + "eligible to be a monkey leader");
 
-
+        System.out.println(Monkey);
     }
 }
