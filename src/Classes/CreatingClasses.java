@@ -36,4 +36,8 @@ class Monkey {
     public String fullName() {
         return (firstName + lastName);
     }
+
+    public boolean isBaby() {
+        return 
+    }
 }
