@@ -11,6 +11,9 @@ class Monkey {
     private int age;
 
     public Monkey() {
-        
+        firstName;
+        lastName;
+        gender;
+        age;
     }
 }
