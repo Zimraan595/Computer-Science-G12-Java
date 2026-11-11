@@ -93,7 +93,10 @@ public class CreatingClasses {
         m1.setFirstName("Alan");
         m1.setLastName("Turning");
 
-        System.out.println(m1.);
+        System.out.println(m1.fullName());
+        System.out.println(m2.fullName());
+
+        
 
     }
 }
