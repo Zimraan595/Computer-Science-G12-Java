@@ -34,6 +34,6 @@ class Monkey {
     }
 
     public String fullName() {
-        return 
+        return (firstName + lastName);
     }
 }
