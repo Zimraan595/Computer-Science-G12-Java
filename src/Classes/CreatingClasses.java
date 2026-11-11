@@ -1,17 +1,11 @@
 package Classes;
 
-public class CreatingClasses {
-
-    Monkey m1 = new Monkey()
-}
-
 class Monkey {
     private static int numberOfMonkeys = 0;
     private String firstName;
     private String lastName;
     private String gender;
     private int age;
-
     public Monkey() {
         this("[first name]");
     }
@@ -83,4 +77,9 @@ class Monkey {
     public int getNumberOfMonkeys() {
         return numberOfMonkeys;
     }
+
+}
+
+public class CreatingClasses {
+    Monkey m1 = new Monkey();
 }
