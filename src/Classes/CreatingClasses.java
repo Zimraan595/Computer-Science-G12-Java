@@ -81,8 +81,12 @@ class Monkey {
 }
 
 public class CreatingClasses {
-    Monkey m1 = new Monkey();
-    Monkey m2 = new Monkey();
+    public static void main(String[] args) {
+        Monkey m1 = new Monkey();
+        m1.setGender("male");
+        m1.setAge(11);
+        Monkey m2 = new Monkey();
+        m2.
 
-    m2.setAg
+    }
 }
