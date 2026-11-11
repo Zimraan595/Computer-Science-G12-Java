@@ -5,6 +5,7 @@ public class CreatingClasses {
 }
 
 class Monkey {
+    private static int numberOfMonkeys = 0;
     private String firstName;
     private String lastName;
     private String gender;
@@ -31,6 +32,7 @@ class Monkey {
         this.lastName = lastName;
         this.gender = gender;
         this.age = age;
+        numberOfMonkeys++;
     }
 
     public String fullName() {
@@ -44,6 +46,4 @@ class Monkey {
     public boolean canBeLeader() {
         return  age >= 10;
     }
-
-    
 }
