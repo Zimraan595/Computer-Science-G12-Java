@@ -5,5 +5,7 @@ public class CreatingClasses {
 }
 
 class monkey {
-    private 
+    private String firstName;
+    private String lastName;
+    private boolean gender;
 }
