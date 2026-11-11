@@ -10,5 +10,6 @@ class Monkey {
     private String gender;
     private int age;
 
+    Monkey()
 
 }
