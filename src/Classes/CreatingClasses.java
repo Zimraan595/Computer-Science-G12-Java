@@ -2,6 +2,7 @@ package Classes;
 
 public class CreatingClasses {
 
+    Monkey m1 = new Monkey()
 }
 
 class Monkey {
@@ -45,5 +46,9 @@ class Monkey {
 
     public boolean canBeLeader() {
         return  age >= 10;
+    }
+
+    public int getNumberOfMonkeys() {
+        return numberOfMonkeys;
     }
 }
