@@ -1,4 +1,9 @@
 package POTD.Polymorphism;
 
-public class Dog {
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Woof!");
+    }
 }
+
