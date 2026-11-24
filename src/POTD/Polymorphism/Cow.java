@@ -7,5 +7,7 @@ class Cow extends Animal {
     }
 
     @Override
-    public void 
+    public void move() {
+        System.out.println("The cow moves slowly");
+    }
 }

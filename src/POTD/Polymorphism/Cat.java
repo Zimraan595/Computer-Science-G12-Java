@@ -8,6 +8,6 @@ class Cat extends Animal {
 
     @Override
     public void move() {
-        System.out.println("");
+        System.out.println("The cat climbs a tree");
     }
 }
